@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-    <header>
+<body class="body" id="Body" >
+    <header class="body_heading" id="Body_heading">
 
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <div class="title">Portfolio.</div>
             <ul>
                 <li><a id="listItems" href="#home" class="active">Home</a></li>
@@ -20,9 +20,29 @@
                 <li><a id="listItems" href="#portfolio">Portfolio</a></li>
                 <li><a id="listItems" href="#contact">Contact</a></li>
             </ul>
+            <div class="outer_menu" id="menu">
+                <div class="iner_menu">
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </nav>
     </header>
+    <section class="mobile_navbar" id="mobile_navbar">
+        <ul>
+            <li><a id="listItems" href="#home" class="active">Home</a></li>
+            <li><a id="listItems" href="#about">About</a></li>
+            <li><a id="listItems" href="#services">Services</a></li>
+            <li><a id="listItems" href="#portfolio">Portfolio</a></li>
+            <li><a id="listItems" href="#contact">Contact</a></li>
+        </ul>
+    </section>
+   
+    
     <div class="container">
+        
         <!-- Home Page  -->
         <section class="home_page showAnimation" id="home">
             <div class="intro_content">
@@ -90,7 +110,10 @@
                     adipisicing elit. Placeat aliquam aperiam totam quae dicta tempora, aspernatur perferendis veniam
                     nemo vero quaerat repellat fuga eaque quasi eius earum sapiente repudiandae commodi.
                 </div>
-                <button class="btn">More About Me</button>
+                <div class="btn_box">
+
+                    <button class="btn">More About Me</button>
+                </div>
             </div>
         </section>
         <!-- Services Page  -->
@@ -266,10 +289,14 @@
                     <button class="btn">Submit</button>
                 </form>
             </div>
-            <footer>Developed With Love By Naveen kumar &copy; 2025</footer>
+            <div class="footer">
+
+                <footer>Developed With Love By Naveen kumar &copy; 2025</footer>
+            </div>
         </section>
     </div>
-    <script src="./javascript.js"></script>
+    <!-- <script src="./javascript.js"></script> -->
+     <script src="./script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
